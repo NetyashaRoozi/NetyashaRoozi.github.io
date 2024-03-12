@@ -303,6 +303,10 @@ body {
   right: 0;
 }
 }
+.platformText {
+  display: block;
+  margin: 10.8rem auto 0;
+}
 @media (max-width: 768px) {
 .col {
   margin-bottom: 20px;

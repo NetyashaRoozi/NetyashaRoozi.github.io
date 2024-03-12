@@ -1,0 +1,353 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+div {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+body {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.8; /* Other non-webkit browsers */
+    zoom: 80%; /* Webkit browsers */
+	cursor: url('images/Cursor.png'), auto;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  cursor: url('images/Cursor2.png'), auto;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; /* ie 6/7 */
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+}
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+.no-space-between-inline-blocks {
+  *letter-spacing: normal; /*reset IE < 8*/
+  letter-spacing: -0.31em; /*webkit*/
+  word-spacing: -0.43em; /*IE < 8 && gecko*/
+}
+/*restore spacing on inner elements*/
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 1628px;
+  color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 4.6875rem; /* 75px / 16px = 4.6875rem */
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+body {
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: 100%; /* 1920px / 1920px = 100% */
+}
+.artboard-1 {
+  position: relative;
+  background: #000000 center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 125vh;
+}
+.col {
+  padding: 4.1rem 0;
+  position: relative;
+  background: url(images/pallayer_1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 125vh;
+}
+
+.l-constrained {
+  margin: 0 auto;
+  position: relative;
+  width: 1628px;
+}
+.wrapper {
+  height: 748px;
+  margin: 0 auto;
+  position: relative;
+  width: 1402px;
+}
+.borders-holder {
+  left: 50%;
+  padding: 42px 0 46px;
+  position: absolute;
+  top: 131px;
+  width: 1402px;
+  background: url(images/borders.png) no-repeat;
+  margin-left: -701px;
+}
+.buttons {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+
+}
+.row {
+  position: relative;
+}
+.titleplate-holder {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 74px auto 0;
+  min-height: 158px;
+  padding: 36px 132px;
+  width: 1620px;
+  background: url(images/titleplate.png) no-repeat;
+  font-size: 5.288051rem; /* 84.61px / 16px = 5.288125rem */
+  font-weight: 100;
+}
+.soundcloud {
+  float: left;
+  margin: 1px 840px 0 0;width: 246px;
+  height: 246px;
+  background: url("images/soundcloudnoanim.png") no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+}
+.soundcloud:hover {
+    background: url("images/soundcloud.png") no-repeat;
+	background-size: contain;
+}
+body:has(.soundcloud:hover) .titleplate-holder:after {
+	content: 'SOUNDCLOUD';
+}
+
+.twitter {
+  float: left;
+  width: 246px;
+  height: 246px;
+  background: url("images/twitternoanim.png") no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+}
+.twitter:hover {
+    background: url("images/twitter.png") no-repeat;
+	background-size: contain;
+}
+body:has(.twitter:hover) .titleplate-holder:after {
+	content: 'TWITTER';
+}
+
+.row-2 {
+  margin: 33px 0 0;
+  position: relative;
+}
+.youtube {
+  float: left;
+  width: 246px;
+  height: 246px;
+  background: url("images/youtubenoanim.png") no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+}
+.youtube:hover {
+    background: url("images/youtube.png") no-repeat;
+	background-size: contain;
+}
+body:has(.youtube:hover) .titleplate-holder:after {
+	content: 'YOUTUBE';
+}
+
+.email {
+	float: left;
+	margin: 0 0 0 303px;
+    width: 246px;
+    height: 246px;
+    background: url("images/emailnoanim.png") no-repeat;
+	background-size: contain;
+	box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+}
+.email:hover {
+    background: url("images/email.png") no-repeat;
+	background-size: contain;
+}
+body:has(.email:hover) .titleplate-holder:after {
+	content: 'EMAIL';
+}
+
+.github {
+	float: left;
+	margin: 0 0 0 291px;
+	width: 246px;
+	height: 246px;
+	background: url("images/githubnoanim.png") no-repeat;
+	background-size: contain;
+	box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+}
+
+.github:hover {
+	margin: 0 0 0 288px;
+    background: url("images/github.png") no-repeat;
+	background-size: contain;
+}
+
+body:has(.github:hover) .titleplate-holder:after {
+	content: 'GITHUB';
+}
+
+.nameplate {
+  height: 97px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 809px;
+  border: 6px solid #0078ff; /*stroke*/
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA4MDkgOTciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Im5hbWVwbGF0ZSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjIwMi4yNSUiPgo8c3RvcCBvZmZzZXQ9IjQuNSUiIHN0b3AtY29sb3I9IiM0YTUxZDMiIHN0b3Atb3BhY2l0eT0iMSIgLz4KPHN0b3Agb2Zmc2V0PSI5NS41JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIiAvPgo8L3JhZGlhbEdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDkiIGhlaWdodD0iOTciIGZpbGw9InVybCgjbmFtZXBsYXRlKSIgLz48L3N2Zz4=);
+  background: -moz-radial-gradient(center center, #4a51d3 4.5%, #000000 95.5%);
+  background: -o-radial-gradient(404.5px 404.5px at center center, #4a51d3 4.5%, #000000 95.5%);
+  background: -webkit-radial-gradient(404.5px 404.5px at center center, #4a51d3 4.5%, #000000 95.5%);
+  background: -webkit-radial-gradient(center center, 404.5px 404.5px, #4a51d3 4.5%, #000000 95.5%);
+  background: -moz-radial-gradient(center center, 404.5px 404.5px, #4a51d3 4.5%, #000000 95.5%);
+  background: -o-radial-gradient(center center, 404.5px 404.5px, #4a51d3 4.5%, #000000 95.5%);
+  background: radial-gradient(404.5px 404.5px at center center, #4a51d3 4.5%, #000000 95.5%);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47);
+  box-shadow: 0 0 68px 0 rgba(0, 0, 0, 0.47); /*drop shadow*/
+  margin-left: -403px;
+}
+.label-text {
+  left: 50%;
+  position: absolute;
+  top: 11px;
+  width: 765px;
+  margin-left: -377px;
+}
+.text {
+  font-weight: 800;
+  text-align: center;
+}
+.platforms {
+  display: block;
+  margin: 127px auto 0;
+}
